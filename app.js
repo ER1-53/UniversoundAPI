@@ -5,7 +5,7 @@ const sequelize = require('./src/db/sequelize');
 const cors = require('cors')
 
 const app = express();
-const PORT = process.env.PORT || 4001;
+const PORT = process.env.DB_PORT || 4001;
 
 app
 .use(favicon(__dirname + '/favicon.ico'))
