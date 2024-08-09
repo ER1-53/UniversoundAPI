@@ -13,6 +13,11 @@ app
 .use(cors())
 
 sequelize.initDB()
+
+app.get('/', (req, res) => {
+  res.json('Good connect !')
+})
+
 //Routes song
 require('./src/routes/song/findAllSongs')(app)
 require('./src/routes/song/findSongByPk')(app)
