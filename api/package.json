@@ -7,7 +7,10 @@
     "start": "NODE_ENV=production node app.js",
     "dev": "NODE_ENV=development nodemon app.js"
   },
-  "author": "Gael & Erwan",
+  "engines": {
+    "node": "16.20.2"
+  },
+    "author": "Gael & Erwan",
   "license": "ISC",
   "dependencies": {
     "bcrypt": "^5.1.1",
